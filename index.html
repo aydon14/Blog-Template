@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dave's Cyber Journal - Thoughts from the Information Superhighway</title>
+    <style>
+        body {
+            background: #008080;
+            font-family: "Times New Roman", serif;
+            margin: 0;
+            padding: 20px;
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><rect width="20" height="20" fill="%23008080"/><circle cx="10" cy="10" r="1" fill="%23006666"/></svg>');
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border: 3px outset #cccccc;
+            padding: 20px;
+        }
+        
+        h1 {
+            color: #ff0000;
+            text-align: center;
+            font-size: 28px;
+            text-shadow: 2px 2px 4px #999999;
+            background: linear-gradient(45deg, #ffff00, #ff00ff);
+            padding: 10px;
+            border: 2px solid #000000;
+            margin-bottom: 20px;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #0000ff;
+            font-size: 16px;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+        
+        .blink {
+            animation: blink 1s infinite;
+            color: #ff0000;
+            font-weight: bold;
+        }
+        
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+        
+        .marquee {
+            background: #ffff00;
+            color: #ff0000;
+            font-weight: bold;
+            padding: 5px;
+            border: 2px solid #000000;
+            margin: 20px 0;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        
+        .marquee span {
+            display: inline-block;
+            animation: scroll 10s linear infinite;
+        }
+        
+        @keyframes scroll {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        
+        .counter {
+            background: #000000;
+            color: #00ff00;
+            font-family: "Courier New", monospace;
+            padding: 10px;
+            text-align: center;
+            border: 2px inset #cccccc;
+            margin: 20px 0;
+        }
+        
+        .blog-post {
+            background: #f0f0f0;
+            border: 3px inset #cccccc;
+            padding: 20px;
+            margin: 25px 0;
+            box-shadow: 3px 3px 6px #999999;
+        }
+        
+        .blog-post h2 {
+            color: #0000ff;
+            font-size: 20px;
+            margin-top: 0;
+            text-decoration: underline;
+            border-bottom: 2px solid #ff0000;
+            padding-bottom: 5px;
+        }
+        
+        .blog-date {
+            background: #ffff00;
+            color: #000000;
+            font-weight: bold;
+            padding: 5px 10px;
+            border: 2px outset #cccccc;
+            display: inline-block;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+        
+        .blog-content {
+            line-height: 1.6;
+            color: #000000;
+        }
+        
+        .blog-content a {
+            color: #0000ff;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        
+        .blog-content a:visited {
+            color: #800080;
+        }
+        
+        .flame {
+            font-weight: bold;
+            animation: flame-wave 2s ease-in-out infinite;
+        }
+        
+        @keyframes flame-wave {
+            0% { color: #ff0000; }
+            33% { color: #ff4500; }
+            66% { color: #ffaa00; }
+            100% { color: #ff0000; }
+        }
+        
+        .new-badge {
+            background: #ff0000;
+            color: #ffff00;
+            font-weight: bold;
+            padding: 3px 8px;
+            border: 1px solid #000000;
+            font-size: 12px;
+            margin-left: 10px;
+        }
+        
+        .navigation {
+            background: #e0e0e0;
+            border: 2px inset #cccccc;
+            padding: 15px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .navigation a {
+            color: #0000ff;
+            text-decoration: underline;
+            font-weight: bold;
+            margin: 0 15px;
+        }
+        
+        .sidebar {
+            background: #ffffcc;
+            border: 2px solid #000000;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        
+        .sidebar h3 {
+            color: #ff0000;
+            margin-top: 0;
+            font-size: 16px;
+            text-decoration: underline;
+        }
+        
+        .update-instructions {
+            background: #e6e6fa;
+            border: 2px dashed #666666;
+            padding: 15px;
+            margin: 20px 0;
+            font-size: 14px;
+            color: #333333;
+        }
+        
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #666666;
+            margin-top: 30px;
+        }
+        
+        hr {
+            border: 2px inset #cccccc;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>💻 DAVE'S CYBER JOURNAL 💻</h1>
+        <div class="subtitle">My thoughts, rants, and discoveries from the World Wide Web</div>
+        
+        <div class="marquee">
+            <span>*** WELCOME TO MY BLOG! *** UPDATED WEEKLY! *** BOOKMARK THIS PAGE! ***</span>
+        </div>
+        
+        <div class="counter">
+            <strong>SITE STATUS:</strong> Online since February 1997 | <strong>BLOG POSTS:</strong> 6
+        </div>
+        
+        <div class="navigation">
+            <a href="#recent">Recent Posts</a> | 
+            <a href="#archive">Archive</a> | 
+            <a href="#about">About</a> | 
+            <a href="mailto:dave@awesome.com">Email Dave</a>
+        </div>
+        
+        <div class="sidebar">
+            <h3>🆕 What's New</h3>
+            <p><span class="blink">NEW POST!</span> Check out my latest thoughts on the future of the internet!</p>
+            <p><strong>Last Updated:</strong> March 20, 1997</p>
+            <p><strong>Posts This Month:</strong> 4</p>
+        </div>
+        
+        <!-- BLOG POST TEMPLATE - COPY THIS SECTION FOR NEW POSTS -->
+        <div class="blog-post">
+            <div class="blog-date">March 20, 1997</div>
+            <h2>The Future of the Internet is Here! <span class="new-badge">NEW!</span></h2>
+            <div class="blog-content">
+                <p>Holy cow, fellow netizens! I just got back from a computer expo and I am <span class="flame">totally blown away</span> by what's coming down the information superhighway!</p>
+                
+                <p>They're saying that in the future, we'll be able to:</p>
+                <ul>
+                    <li>Shop for groceries online and have them delivered!</li>
+                    <li>Watch movies on our computers (imagine that!)</li>
+                    <li>Video chat with people across the world</li>
+                    <li>Have portable computers we can carry around</li>
+                </ul>
+                
+                <p>I know it sounds like science fiction, but mark my words - the web is going to change everything! 🚀</p>
+                
+                <p>What do you think? Drop me a line at <a href="mailto:dave@awesome.com">dave@awesome.com</a> and let me know your thoughts!</p>
+            </div>
+        </div>
+        
+        <div class="blog-post">
+            <div class="blog-date">March 15, 1997</div>
+            <h2>My First Java Applet Experience</h2>
+            <div class="blog-content">
+                <p>Dudes and dudettes, I finally got my hands on this thing called a "Java applet" and it's <span class="flame">mind-blowing</span>! It's like having a mini-program that runs right in your browser!</p>
+                
+                <p>I spent all weekend trying to compile this bouncing ball animation, and after approximately 47 cups of coffee and countless error messages, I finally got it working. The ball bounces around the screen and everything!</p>
+                
+                <p>Java is definitely the future of web programming. Move over, HTML - there's a new sheriff in town! ☕</p>
+                
+                <p>Next week I'm going to try to make a calculator applet. Wish me luck!</p>
+            </div>
+        </div>
+        
+        <div class="blog-post">
+            <div class="blog-date">March 10, 1997</div>
+            <h2>Netscape vs Internet Explorer - The Browser Wars!</h2>
+            <div class="blog-content">
+                <p>Fellow web surfers, we're living in historic times! The battle for browser supremacy is heating up and I have some <span class="flame">hot takes</span> to share.</p>
+                
+                <p><strong>Netscape Navigator:</strong> The original and still the best! Great features, reliable, and it respects web standards. Plus, it has that cool "N" logo that pulses when a page is loading.</p>
+                
+                <p><strong>Internet Explorer:</strong> Microsoft's answer to Netscape. It's... okay, I guess? It comes with Windows 95, which is convenient, but it feels like they're trying to control the whole internet.</p>
+                
+                <p>My prediction? Netscape will always be the king of browsers. Microsoft should stick to operating systems and leave the web to the experts!</p>
+                
+                <p>What browser are you using? I'm curious to hear from my readers!</p>
+            </div>
+        </div>
+        
+        <div class="blog-post">
+            <div class="blog-date">March 5, 1997</div>
+            <h2>Building My First Website - Tips and Tricks</h2>
+            <div class="blog-content">
+                <p>Hey everyone! After weeks of learning HTML by hand-coding in Notepad, I finally launched my personal homepage. Here are some tips for fellow aspiring webmasters:</p>
+                
+                <p><strong>Essential Elements Every Site Needs:</strong></p>
+                <ul>
+                    <li>A visitor counter (how else will people know you're popular?)</li>
+                    <li>Animated GIFs - the more, the better!</li>
+                    <li>A guestbook for visitor feedback</li>
+                    <li>Links to your favorite sites</li>
+                    <li>Under construction signs (very important!)</li>
+                </ul>
+                
+                <p>Remember: if your site doesn't have at least 3 different font colors and a blinking element, you're doing it wrong! 😄</p>
+                
+                <p>The web is all about <span class="flame">expressing yourself</span> and having fun. Don't worry about looking "professional" - this is cyberspace, baby!</p>
+            </div>
+        </div>
+        
+        <div class="blog-post">
+            <div class="blog-date">February 28, 1997</div>
+            <h2>My Thoughts on This "World Wide Web" Thing</h2>
+            <div class="blog-content">
+                <p>Welcome to my very first blog post! I decided to start this cyber journal to document my adventures on the information superhighway.</p>
+                
+                <p>The internet is still pretty new and exciting. Every day I discover new websites, meet new people in chat rooms, and learn amazing things. It's like having the world's biggest library right at your fingertips!</p>
+                
+                <p>I have a feeling this "web" thing is going to be pretty big. Maybe someday everyone will have their own homepage!</p>
+                
+                <p>Thanks for stopping by, and remember to bookmark this page for future updates! 🌐</p>
+            </div>
+        </div>
+        
+        <!-- END OF BLOG POSTS SECTION -->
+        
+        <hr>
+        
+        <a name="archive"></a>
+        <div class="sidebar">
+            <h3>📚 Blog Archive</h3>
+            <p><strong>March 1997:</strong> 5 posts</p>
+            <p><strong>February 1997:</strong> 1 post</p>
+            <p><strong>Total Posts:</strong> 6</p>
+        </div>
+        
+        <a name="about"></a>
+        <div class="sidebar">
+            <h3>ℹ️ About This Blog</h3>
+            <p>This cyber journal is where I share my thoughts about computers, the internet, and life in general. I try to update it weekly with new posts about web development, technology trends, and whatever else is on my mind!</p>
+            <p><strong>Started:</strong> February 1997</p>
+            <p><strong>Platform:</strong> Hand-coded HTML</p>
+        </div>
+        
+        <div class="footer">
+            <hr>
+            <p>This blog was hand-coded in Notepad by Dave<br>
+            Copyright © 1997 Dave's Cyber Journal. All rights reserved.<br>
+            <span class="blink">Made with 100% HTML!</span></p>
+            
+            <p>
+                <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='80' height='15'><rect width='80' height='15' fill='%23ff0000'/><text x='40' y='10' text-anchor='middle' fill='white' font-size='10' font-family='Arial'>Best viewed with Netscape</text></svg>" alt="Best viewed with Netscape">
+                <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='80' height='15'><rect width='80' height='15' fill='%230000ff'/><text x='40' y='10' text-anchor='middle' fill='white' font-size='10' font-family='Arial'>800x600</text></svg>" alt="800x600">
+                <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='80' height='15'><rect width='80' height='15' fill='%23008000'/><text x='40' y='10' text-anchor='middle' fill='white' font-size='10' font-family='Arial'>Hand Coded HTML</text></svg>" alt="Hand Coded HTML">
+            </p>
+        </div>
+    </div>
+</body>
+</html>
